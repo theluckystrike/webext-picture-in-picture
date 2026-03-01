@@ -1,0 +1,36 @@
+{
+    "name": "webext-picture-in-picture",
+    "version": "0.1.0",
+    "description": "PiP floating panel for Chrome extensions — resize, drag, pin, opacity, and two-way messaging for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "pip",
+        "picture-in-picture",
+        "floating",
+        "panel",
+        "manifest-v3",
+        "browser-extension",
+        "window"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/webext-picture-in-picture.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}

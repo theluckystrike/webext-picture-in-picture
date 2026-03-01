@@ -1,0 +1,1 @@
+export { PiPPanel } from './pip';
